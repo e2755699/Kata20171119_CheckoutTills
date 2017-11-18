@@ -41,7 +41,7 @@ namespace Kata20171119_CheckoutTills
         [TestMethod]
         public void InputQueueIs_1_5_3_andTwoTill()
         {
-            AssertShouldBe(new[] { 1, 2, 3 }, 2, 5);
+            AssertShouldBe(new[] { 1, 5, 3 }, 2, 5);
         }
 
 
@@ -68,7 +68,7 @@ namespace Kata20171119_CheckoutTills
                 return Math.Max(queue[0], queue[1]);
             }
 
-            return Math.Min(queue[0], queue[1]) + queue[2];
+            return Math.Max(Math.Min(queue[0], queue[1]) + queue[2], Math.Max(queue[0], queue[1]));
         }
     }
 }
