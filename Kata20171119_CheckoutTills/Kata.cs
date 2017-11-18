@@ -38,6 +38,12 @@ namespace Kata20171119_CheckoutTills
             AssertShouldBe(new[] { 1, 2 ,3}, 2, 4);
         }
 
+        [TestMethod]
+        public void InputQueueIs_1_5_3_andTwoTill()
+        {
+            AssertShouldBe(new[] { 1, 2, 3 }, 2, 5);
+        }
+
 
         private static void AssertShouldBe(int[] queue, int tills, int expect)
         {
