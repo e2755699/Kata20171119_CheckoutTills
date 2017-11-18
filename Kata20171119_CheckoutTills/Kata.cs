@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Kata20171119_CheckoutTills
 {
     [TestClass]
-    public class UnitTest1
+    public class Kata
     {
         [TestMethod]
         public void TestMethod1()
