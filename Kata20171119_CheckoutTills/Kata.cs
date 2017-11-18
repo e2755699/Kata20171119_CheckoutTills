@@ -57,7 +57,12 @@ namespace Kata20171119_CheckoutTills
                 return queue.Aggregate((result, a) => result + a);
             }
 
-            return Math.Max(queue[0], queue[1]);
+            if (queue.Length == 2)
+            {
+                return Math.Max(queue[0], queue[1]);
+            }
+
+            return Math.Min(queue[0], queue[1]) + queue[2];
         }
     }
 }
